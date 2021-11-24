@@ -1,0 +1,71 @@
+/* 
+	Template Name: Kanban Board
+	Author: Manorath Dhakal
+    Date: 2016-05-20
+*/
+body
+{
+	margin: 0px auto;
+	padding: 0;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	background-color: #efefef;
+}
+ul{margin:0; padding: 0}
+a{cursor: pointer}
+
+#content
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+#board
+{
+	width: 100%;
+	min-height:100px;
+	
+	position:relative;
+}
+.title
+{
+	background-color: #2196F3;	
+	text-align:center;
+	color: #fff;
+	padding: 2px 0px;
+}
+
+#todo, #plan, #inprogress, #intest, #done
+{
+	/* background-color: #BBDEFB; */
+	 /* position:absolute; */
+	width: 19%;
+	min-height:150px;
+	float: left;
+	padding: 1px 4px
+}
+#todo, #plan, #inprogress, #intest{border-right: 1px solid #BDBDBD;}
+
+/*** Items  ***/
+
+.item {margin: 4px 0px; margin-bottom: 10px; border: 1px solid #BDBDBD}
+.item a, .item .dueDate a, .item .dueDate{color: #fff}
+.item a{text-decoration: none; display: block; padding: 10px}
+.item .dueDate{font-size: 13px; color: #fff; font-weight: 600; padding: 8px }
+.item hr{color: #BDBDBD}
+.reminderNone{background-color: #03A9F4;}
+.reminderTwoWeek {background-color: #FFC107;}
+.reminderOneWeek {background-color: #FF9800;}
+.reminderPastWeek {background-color: #F44336}
+
+.dueDate a{display: inline}
+.item a:hover{color:#FFCDD2}
+
+
+.cardTitle
+{
+	background-color: rgb(255,255,255);
+	border:2px solid white;
+}
